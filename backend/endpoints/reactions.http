@@ -2,19 +2,19 @@
 @urlPath = api/v1
 
 ###
-GET {{baseUrl}}/{{urlPath}}/post/reactions/<postId>
+GET {{baseUrl}}/{{urlPath}}/post/reactions/6366504370b2f816c72fb67d
 Content-Type: application/json
 Accept: application/json
 withCredentials: true
 
 ###
-GET {{baseUrl}}/{{urlPath}}/post/single/reaction/username/<username-of-logged-in-user>/<postId>
+GET {{baseUrl}}/{{urlPath}}/post/single/reaction/username/Vengat/6366504370b2f816c72fb67d
 Content-Type: application/json
 Accept: application/json
 withCredentials: true
 
 ###
-GET {{baseUrl}}/{{urlPath}}/post/reactions/username/<username-of-logged-in-user>
+GET {{baseUrl}}/{{urlPath}}/post/reactions/username/Vengat
 Content-Type: application/json
 Accept: application/json
 withCredentials: true

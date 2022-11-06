@@ -25,7 +25,7 @@ withCredentials: true
 # Feelings - like | love | wow | happy | sad | angry
 
 {
-  "post": "First Post",
+  "post": "Second Post",
   "bgColor": "white",
   "privacy": "Public",
   "gifUrl": "",

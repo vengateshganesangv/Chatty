@@ -14,6 +14,13 @@ export class Get {
     const reactions: [IReactionDocument[], number] = cachedReactions[0].length
       ? cachedReactions
       : await reactionService.getPostReactions({ postId: new mongoose.Types.ObjectId(postId) }, { createdAt: -1 });
+
+    //For to check in database alone
+    // const reactions: [IReactionDocument[], number] = await reactionService.getPostReactions(
+    //   { postId: new mongoose.Types.ObjectId(postId) },
+    //   { createdAt: -1 }
+    // );
+
     res.status(HTTP_STATUS.OK).json({ message: 'Post reactions', reactions: reactions[0], count: reactions[1] });
   }
 
