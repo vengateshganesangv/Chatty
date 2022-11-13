@@ -30,7 +30,7 @@ withCredentials: true
 {}
 
 ###
-PUT {{baseUrl}}/{{urlPath}}/user/block/<followerId>
+PUT {{baseUrl}}/{{urlPath}}/user/block/63552ac989155a6d0f67d2af
 Content-Type: application/json
 Accept: application/json
 withCredentials: true
@@ -38,7 +38,7 @@ withCredentials: true
 {}
 
 ###
-PUT {{baseUrl}}/{{urlPath}}/user/unblock/<followerId>
+PUT {{baseUrl}}/{{urlPath}}/user/unblock/63552ac989155a6d0f67d2af
 Content-Type: application/json
 Accept: application/json
 withCredentials: true
