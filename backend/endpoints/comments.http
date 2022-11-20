@@ -27,8 +27,8 @@ Accept: application/json
 withCredentials: true
 
 {
-  "userTo": "63552ac989155a6d0f67d2af",
-  "postId": "6366504370b2f816c72fb67d",
-  "comment": "This Is My second Comment",
+  "userTo": "6370d12b32a50be61bfd7bb4",
+  "postId": "6367699259e15c35df160238",
+  "comment": "This Is My Comment to test comment notification",
   "profilePicture": "<cloudinary-user-profile-picture-url>"
 }
