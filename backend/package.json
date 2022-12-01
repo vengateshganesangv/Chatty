@@ -11,11 +11,13 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "prettier:check": "prettier --check src/**/*.{ts,json}",
     "prettier:fix": "prettier --write src/**/*.{ts,json}",
-    "linux_start:dev": "npm run build && export NODE_ENV=development && node build/app.js | bunyan",
-    "window_start:dev": "npm run build && set NODE_ENV=development && node build/app.js | bunyan",
+    "window_test": "set NODE_ENV=development&& jest --coverage=true -w=1 --forceExit --detectOpenHandles --watchAll=false",
+    "linux_test": "export NODE_ENV=development&& jest --coverage=true -w=1 --forceExit --detectOpenHandles --watchAll=false",
+    "linux_start:dev": "npm run build && export NODE_ENV=development && node build/src/app.js | bunyan",
+    "window_start:dev": "npm run build && set NODE_ENV=development && node build/src/app.js | bunyan",
     "linux_watch:dev": "export NODE_ENV=development&& npm run watch | bunyan",
     "window_watch:dev": "set NODE_ENV=development&& npm run watch | bunyan",
-    "start:prod": "npm run build && export NODE_ENV=production && node build/app.js"
+    "start:prod": "npm run build && set NODE_ENV=production && pm2 start build/src/app.js -i max --attach --watch | bunyan"
   },
   "keywords": [],
   "author": "",
@@ -28,6 +30,11 @@
     "@types/express": "^4.17.14",
     "@types/hpp": "^0.2.2",
     "@types/jest": "^29.0.3",
+    "@types/joi": "^17.2.3",
+    "@types/jsonwebtoken": "^8.5.9",
+    "@types/lodash": "^4.14.185",
+    "@types/nodemailer": "^6.4.6",
+    "@types/swagger-stats": "^0.95.6",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
     "@typescript-eslint/parser": "^5.38.0",
     "eslint": "^8.24.0",
@@ -57,6 +64,7 @@
     "http-status-codes": "^2.2.0",
     "mongoose": "^6.6.1",
     "redis": "^4.3.1",
-    "socket.io": "^4.5.2"
+    "socket.io": "^4.5.2",
+    "swagger-stats": "^0.99.2"
   }
 }
