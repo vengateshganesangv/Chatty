@@ -18,6 +18,8 @@ export interface IPostDocument extends Document {
   gifUrl?: string;
   privacy?: string;
   reactions?: IReactions;
+  videoId?: string;
+  videoVersion?: string;
   createdAt?: Date;
 }
 
@@ -26,6 +28,7 @@ export interface IGetPostsQuery {
   username?: string;
   imgId?: string;
   gifUrl?: string;
+  videoId?: string;
 }
 
 export interface ISavePostToCache {
