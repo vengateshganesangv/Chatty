@@ -71,7 +71,6 @@ describe('Get', () => {
       });
     });
   });
-
   describe('postWithImages', () => {
     it('should send correct json response if posts exist in cache', async () => {
       const req: Request = postMockRequest(newPost, authUserPayload, { page: '1' }) as Request;
